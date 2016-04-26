@@ -1,7 +1,7 @@
 {
     "name": "itephp/project",
     "description": "Basic project structure.",
-    "type": "library",
+    "type": "project",
     "license": "MIT",
     "authors": [
         {
