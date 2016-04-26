@@ -1,0 +1,13 @@
+{
+    "name": "itephp/project",
+    "description": "Basic project structure.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michal Tomczak",
+            "email": "php@iteracja.com"
+        }
+    ],
+    "require": {}
+}
