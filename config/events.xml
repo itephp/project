@@ -2,7 +2,7 @@
 
 <content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
-    <event bind="executeAction" class="ItePHP\Framework\Event\Argument" method="onExecuteAction" />
-    <event bind="executeAction" class="ItePHP\Framework\Event\Authenticate" method="onExecuteAction"/>
+    <event bind="executeAction" class="ItePHP\Event\Argument" method="onExecuteAction" />
+    <event bind="executeAction" class="ItePHP\Event\Authenticate" method="onExecuteAction"/>
 
 </content>

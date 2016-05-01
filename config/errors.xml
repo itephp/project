@@ -1,5 +1,5 @@
 <content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
-	<error pattern=".*" presenter="ItePHP\Twig-Bridge\Presenter\Twig" />
+	<error pattern=".*" presenter="ItePHP\Twig\Presenter" />
 
 </content>
