@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+
+<content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<service name="doctrine" class="ItePHP\Doctrine-Bridge\Service\Doctrine" >
+		<config enviorment="dev"
+			driver="{dev.database.driver}"
+			host="{dev.database.host}"
+			user="{dev.database.user}"
+			password="{dev.database.password}"
+			dbname="{dev.database.dbname}"
+		 />
+		<config enviorment="prod"
+			driver="{prod.database.driver}"
+			host="{prod.database.host}"
+			user="{prod.database.user}"
+			password="{prod.database.password}"
+			dbname="{prod.database.dbname}"
+		 />
+		<config enviorment="test"
+			driver="{test.database.driver}"
+			host="{test.database.host}"
+			user="{test.database.user}"
+			password="{test.database.password}"
+			dbname="{test.database.dbname}"
+		 />
+
+	</service>
+
+	<service name="twig" class="ItePHP\Twig-Bridge\Service\Twig">
+	</service>
+
+	<service name="validator" class="ItePHP\Framework\Service\Validator" />
+	<service name="mapper" class="ItePHP\Framework\Service\Mapper" />
+	<service name="form" class="ItePHP\Framework\Service\Form" />
+	<service name="grid" class="ItePHP\Framework\Service\Grid" />
+
+</content>

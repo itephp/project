@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+
+<content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<command name="migrate:update" class="ItePHP\Framework\Command\Migrate" method="update" />
+	<command name="migrate:downgrade" class="ItePHP\Framework\Command\Migrate" method="downgrade" />
+	<command name="migrate:create" class="ItePHP\Framework\Command\Migrate" method="create" />
+
+</content>

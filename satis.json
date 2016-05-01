@@ -1,8 +1,0 @@
-{
-    "name": "ItePhp",
-    "homepage": "iteracja.com",
-    "repositories": [
-        { "type": "vcs", "url": "git@github.com:itephp/project.git" }
-    ],
-    "require-all": true
-}

@@ -1,0 +1,9 @@
+<?xml version="1.0" ?>
+
+<content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<action controller="BaseController" method="index" >
+		<route pattern="(\/|)" />
+		<presenter class="ItePHP\Twig-Bridge\Presenter\Twig" />
+	</action>
+
+</content>

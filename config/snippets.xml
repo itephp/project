@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+
+<content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <snippet class="ItePHP\Doctrine-Bundle\Snippet\Doctrine" method="getDoctrine" />
+    <snippet class="ItePHP\Doctrine-Bundle\Snippet\Doctrine" method="getRepository" />
+    <snippet class="ItePHP\Doctrine-Bundle\Snippet\Doctrine" method="find" />
+    <snippet class="ItePHP\Doctrine-Bundle\Snippet\Doctrine" method="findOne" />
+    <snippet class="ItePHP\Doctrine-Bundle\Snippet\Doctrine" method="flush" />
+    <snippet class="ItePHP\Doctrine-Bundle\Snippet\Doctrine" method="persist" />
+    <snippet class="ItePHP\Doctrine-Bundle\Snippet\Doctrine" method="executeQuery" />
+    <snippet class="ItePHP\Doctrine-Bundle\Snippet\Doctrine" method="escape" />
+    <snippet class="ItePHP\Doctrine-Bundle\Snippet\Doctrine" method="getConnection" />
+    <snippet class="ItePHP\Doctrine-Bundle\Snippet\Doctrine" method="remove" />
+    <snippet class="ItePHP\Framework\Snippet\Mapper" method="cast" />
+    <snippet class="ItePHP\Framework\Snippet\Validator" method="validate" />
+    <snippet class="ItePHP\Framework\Snippet\Route" method="redirect" />
+
+</content>
