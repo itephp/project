@@ -13,9 +13,8 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-require_once __DIR__.'/../vendor/itephp/framework/core/Autoloader.php';
+require_once __DIR__.'/../vendor/autoload.php';
 
-$autoloader=new \ItePHP\Core\Autoloader();
 
 $env='prod';
 $debug=false;
@@ -24,5 +23,5 @@ if(file_exists(__DIR__.'/../dev')){
 	$debug=true;
 }
 
-$root=new \ItePHP\Root($autoloader,$debug,false,$env);
+$root=new \ItePHP\Root($debug,false,$env);
 $root->executeRequest();
