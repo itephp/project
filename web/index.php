@@ -1,7 +1,7 @@
 <?php
 
 /**
- * ItePHP: Freamwork PHP (http://php.iteracja.com)
+ * ItePHP: Framework PHP (http://itephp.com)
  * Copyright (c) NewClass (http://newclass.pl)
  *
  * Licensed under The MIT License
@@ -9,13 +9,13 @@
  * Redistributions of files must retain the above copyright notice.
  *
  * @copyright     Copyright (c) NewClass (http://newclass.pl)
- * @link          http://php.iteracja.com ItePHP Project
+ * @link          http://itephp.com ItePHP Project
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
 require_once __DIR__.'/../vendor/itephp/framework/core/Autoloader.php';
 
-$autoloader=new ItePHP\Framework\Core\Autoloader();
+$autoloader=new \ItePHP\Core\Autoloader();
 
 $env='prod';
 $debug=false;
@@ -24,5 +24,5 @@ if(file_exists(__DIR__.'/../dev')){
 	$debug=true;
 }
 
-$root=new ItePHP\Framework\Root($autoloader,$debug,false,$env);
+$root=new \ItePHP\Root($autoloader,$debug,false,$env);
 $root->executeRequest();

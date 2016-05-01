@@ -12,6 +12,8 @@
     "require": {
         "php": ">=5.4.0"
         ,"itephp/framework": "^0.1"
+        ,"itephp/doctrine-bridge": "^0.1"
+        ,"itephp/twig-bridge": "^0.1"
         ,"doctrine/orm": "^2.5"
         ,"twig/twig": "^v1.24"
         },
