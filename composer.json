@@ -16,7 +16,7 @@
         ,"itephp/twig-bridge": "^0.1"
         },
     "autoload": {
-        "psr-4": { "\\": "src" }
+        "psr-4": { "": "src" }
     },
     "minimum-stability": "dev"
 }
