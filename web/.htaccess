@@ -2,25 +2,3 @@ RewriteEngine On
 RewriteBase /
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^(.*)$ index.php [QSA]
-
-#<ifmodule mod_deflate.c>
-#AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript #text/javascript
-#</ifmodule>
-
-SetEnvIf Request_URI ^/mega/dziwny/link/ktory/do/niczego/nie/sluzy require_auth=true
-
-# Auth stuff
-AuthUserFile /var/www/d4k/.htpasswd
-AuthName "d4k"
-AuthType Basic
-
-# Setup a deny/allow
-Order Deny,Allow
-# Deny from everyone
-Deny from all
-# except if either of these are satisfied
-Satisfy any
-# 1. a valid authenticated user
-Require valid-user
-# or 2. the "require_auth" var is NOT set
-Allow from env=!require_auth

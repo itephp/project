@@ -13,12 +13,16 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-require_once __DIR__.'/../vendor/autoload.php';
+define('ITE_ROOT', dirname(__DIR__));
+define('ITE_WEB', ITE_ROOT.'/web');
+define('ITE_SRC', ITE_ROOT.'/src');
+
+require_once ITE_ROOT.'/vendor/autoload.php';
 
 
 $env='prod';
 $debug=false;
-if(file_exists(__DIR__.'/../dev')){
+if(file_exists(ITE_ROOT.'/dev')){
 	$env='dev';
 	$debug=true;
 }
