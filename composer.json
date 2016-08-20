@@ -11,9 +11,9 @@
     ],
     "require": {
         "php": ">=5.4.0"
-        ,"itephp/framework": "^0."
-        ,"itephp/doctrine-bridge": "^0."
-        ,"itephp/twig-bridge": "^0."
+        ,"itephp/framework": "^0.3."
+        ,"itephp/doctrine-bridge": "^0.2."
+        ,"itephp/twig-bridge": "^0.2."
         },
     "autoload": {
         "psr-4": { 

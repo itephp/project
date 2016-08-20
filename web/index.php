@@ -13,19 +13,22 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-define('ITE_ROOT', dirname(__DIR__));
-define('ITE_WEB', ITE_ROOT.'/web');
-define('ITE_SRC', ITE_ROOT.'/src');
+$rootPath=dirname(__DIR__);
 
-require_once ITE_ROOT.'/vendor/autoload.php';
-
+require_once $rootPath.'/vendor/autoload.php';
 
 $env='prod';
 $debug=false;
-if(file_exists(ITE_ROOT.'/dev')){
+if(file_exists($rootPath.'/dev')){
 	$env='dev';
 	$debug=true;
 }
 
-$root=new \ItePHP\Root($debug,false,$env);
-$root->executeRequest();
+$url=strstr($_SERVER['REQUEST_URI'],'?',true);
+if(!$url)
+	$url=$_SERVER['REQUEST_URI'];
+
+$envioroment=new \ItePHP\Core\Enviorment($debug,false,$env,$rootPath);
+
+$root=new \ItePHP\Root($envioroment);
+$root->executeRequest($url);
