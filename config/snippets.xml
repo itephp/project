@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 
-<content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<content>
     <snippet class="ItePHP\Doctrine\DoctrineSnippet" method="getDoctrine" />
     <snippet class="ItePHP\Doctrine\DoctrineSnippet" method="getRepository" />
     <snippet class="ItePHP\Doctrine\DoctrineSnippet" method="find" />

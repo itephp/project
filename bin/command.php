@@ -26,10 +26,11 @@ if(file_exists($rootPath.'/dev')){
 	$debug=true;
 }
 
-$envioroment=new \ItePHP\Core\Enviorment($debug,false,$env,$rootPath);
+$environment=new \ItePHP\Core\Environment($debug,false,$env,$rootPath);
 
 
-$root=new \ItePHP\Root($envioroment);
+$root=new \ItePHP\Root($environment);
 $sigint=$root->executeCommand($argv);
 
 exit($sigint);
+

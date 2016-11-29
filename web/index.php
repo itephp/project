@@ -28,7 +28,7 @@ $url=strstr($_SERVER['REQUEST_URI'],'?',true);
 if(!$url)
 	$url=$_SERVER['REQUEST_URI'];
 
-$envioroment=new \ItePHP\Core\Enviorment($debug,false,$env,$rootPath);
+$environment=new \ItePHP\Core\Environment($debug,false,$env,$rootPath);
 
-$root=new \ItePHP\Root($envioroment);
+$root=new \ItePHP\Root($environment);
 $root->executeRequest($url);

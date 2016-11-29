@@ -1,6 +1,6 @@
 <?xml version="1.0" ?>
 
-<content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<content>
 	<variable name="db.driver" value="pg_sql" />
 	<variable name="db.host" value="localhost" />
 	<variable name="db.port" value="5432" />

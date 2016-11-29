@@ -1,17 +1,17 @@
 <?xml version="1.0" ?>
 
-<content xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<content>
 	<service name="doctrine" class="ItePHP\Doctrine\DoctrineService">
 		<method name="__construct">
-			<argument type="reference" value="enviorment" />
-			<argument type="reference" value="eventmanager" />
-			<argument type="primitive" value="!db.driver" />
-			<argument type="primitive" value="!db.username" />
-			<argument type="primitive" value="!db.password" />
-			<argument type="primitive" value="!db.name" />
-			<argument type="primitive" value="!db.host" />
-			<argument type="primitive" value="!db.host" />
-			<argument type="primitive" value="!db.port" />
+			<argument type="reference" value="environment" />
+			<argument type="reference" value="eventManager" />
+			<argument type="primitive" value="@db.driver" />
+			<argument type="primitive" value="@db.username" />
+			<argument type="primitive" value="@db.password" />
+			<argument type="primitive" value="@db.name" />
+			<argument type="primitive" value="@db.host" />
+			<argument type="primitive" value="@db.host" />
+			<argument type="primitive" value="@db.port" />
 		</method>
 	</service>
 	<service name="validator" class="ItePHP\Core\ValidatorService" />

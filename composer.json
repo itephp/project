@@ -11,15 +11,15 @@
     ],
     "require": {
         "php": ">=5.4.0"
-        ,"itephp/framework": "^0.3."
+        ,"itephp/framework": "^0.4."
         ,"itephp/doctrine-bridge": "^0.2."
-        ,"itephp/twig-bridge": "^0.2."
+        ,"itephp/twig-bridge": "^0.2.",
+        "iteracja/via": "^1.0"
         },
     "autoload": {
         "psr-4": { 
             "": "src/"
             ,"Test\\": "test/"
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
